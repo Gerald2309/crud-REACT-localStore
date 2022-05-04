@@ -1,8 +1,10 @@
 import React from 'react';
 import { TodoContext } from '../TodoContext';
 import './TodoForm.css';
+import { useForm } from "react-hook-form";
 
 function TodoForm() {
+  const { register, handleSubmit, formState: { errors } } = useForm();
   const [newTodoValue, setNewTodoValue] = React.useState('');
   const {
     addTodo,
@@ -15,20 +17,24 @@ function TodoForm() {
   const onCancel = () => {
     setOpenModal(false);
   };
-  const onSubmit = (event) => {
-    event.preventDefault();
+  const onSubmit = () => {
+  
     addTodo(newTodoValue);
     setOpenModal(false);
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={handleSubmit (onSubmit)}>
       <label>Escribe tu nuevo TODO</label>
       <textarea
+        {...register("required", { required: true })}
         value={newTodoValue}
         onChange={onChange}
         placeholder="Cortar la cebolla oara el almuerzo"
       />
+      <div>
+      {errors.required && <span className="error">Este campo es requerido</span>}
+      </div>
       <div className="TodoForm-buttonContainer">
         <button
           type="button"
