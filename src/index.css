@@ -1,9 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background: #F2F4F5;
+  background-image: url("./img/3wallpaper.jpg");
   color: #1E1E1F;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 #root {

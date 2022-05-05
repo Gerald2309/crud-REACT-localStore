@@ -2,10 +2,15 @@
   background-color: #FAFAFA;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 24px;
   box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+  height: 64px;
+  width: calc(100% - 10px);
+  align-items: center;
+ 
+ /* box-shadow: 50px rgba(255, 255, 255, 0.555);*/
+  border-radius: 8px;
+  margin-top: 24px;
+
 }
 
 .TodoItem-p {
@@ -50,5 +55,7 @@
 }
 
 .date {
-  margin-right: 100px
+  margin-right: 50px;
+  background-color: #95c1ec;
+  border-radius: 5px;
 }

@@ -15,7 +15,6 @@ function TodoItem(props) {
         {props.text}
       </p>
      
-      <p>fecha límite </p>
 
       <input className="date"  type="date"></input>
       <span className="Icon Icon-delete" onClick={props.onDelete}>

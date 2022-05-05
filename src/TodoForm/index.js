@@ -25,12 +25,12 @@ function TodoForm() {
 
   return (
     <form onSubmit={handleSubmit (onSubmit)}>
-      <label>Escribe tu nuevo TODO</label>
+      <label>Escribe tu nueva tarea</label>
       <textarea
         {...register("required", { required: true })}
         value={newTodoValue}
         onChange={onChange}
-        placeholder="Cortar la cebolla oara el almuerzo"
+        placeholder="Cortar la cebolla para el almuerzo"
       />
       <div>
       {errors.required && <span className="error">Este campo es requerido</span>}
