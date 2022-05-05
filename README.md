@@ -10,6 +10,9 @@ Validación para no ingresar tarea vacía
 Funcionalidad fecha límite de tarea
 ![cap4](https://user-images.githubusercontent.com/68652749/166869441-18b5b1ac-c69c-482e-843d-5073f3f4c738.jpeg)
 
+Confirmación de borrar tarea 
+![cap5](https://user-images.githubusercontent.com/68652749/166948863-a57be832-340f-42c2-ab0e-3c480fe364c4.png)
+
 
 ## Getting Started with Create React App
 
