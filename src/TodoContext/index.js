@@ -44,11 +44,14 @@ function TodoProvider(props) {
     saveTodos(newTodos);
   };
 
+
   const deleteTodo = (text) => {
-    const todoIndex = todos.findIndex(todo => todo.text === text);
-    const newTodos = [...todos];
-    newTodos.splice(todoIndex, 1);
-    saveTodos(newTodos);
+    //window.confirm para validar si se quiere eliminar tarea
+    if(window.confirm("¿Seguro que quiere eliminar la tarea?")){const todoIndex = todos.findIndex(todo => todo.text === text);
+      const newTodos = [...todos];
+      newTodos.splice(todoIndex, 1);
+      saveTodos(newTodos);}
+    
   };
   
   return (
