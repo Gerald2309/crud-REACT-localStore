@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+## Cambios Realizados
+
+Estilo:
+![cap1](https://user-images.githubusercontent.com/68652749/166869255-82f4fddc-f0e0-4e0b-b2ce-f92d797831d1.png)
+![cap2](https://user-images.githubusercontent.com/68652749/166869268-23c33b84-d4e3-4b22-b781-e32dac377209.png)
+
+Validación para no ingresar tarea vacía
+![cap3](https://user-images.githubusercontent.com/68652749/166869363-c8bfa368-6f3a-42bb-be47-bab3936fe06d.png)
+
+Funcionalidad fecha límite de tarea
+![cap4](https://user-images.githubusercontent.com/68652749/166869441-18b5b1ac-c69c-482e-843d-5073f3f4c738.jpeg)
+
+Confirmación de borrar tarea 
+![cap5](https://user-images.githubusercontent.com/68652749/166948863-a57be832-340f-42c2-ab0e-3c480fe364c4.png)
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
